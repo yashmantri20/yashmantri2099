@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aclonica">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Red+Hat+Display">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <title>Yash Mantri</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <button onclick="topFunction()" id="topscroll" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container text-uppercase">
+        <a class="navbar-brand" href="#">Yash Mantri</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item active">
+              <a class="nav-link" href="/" >Home <span class="sr-only">(current)</span></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#skillnaboutme" onclick="scrollToID(document.getElementById('skillnaboutme'),500)">About Me</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#projects" onclick="scrollToID(document.getElementById('projects'),500)">Projects</a>
+            </li>
+
+            <!-- <li class="nav-item">
+                <a class="nav-link" href="#">Work Experience</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">Skills</a>
+            </li> -->
+
+            <li class="nav-item">
+                <a class="nav-link" href="#blog" onclick="scrollToID(document.getElementById('blog'),500)">Blogs</a>
+            </li>
+          </ul>
+        </div>
+        </div>
+      </nav>
+    
+    <div class="screen">
+        <div class="overlayhead">
+            <h1 class="namehead" style="font-size: 45px;font-family: 'Red Hat Display',sans-serif;">Hi! I'm Yash &amp; My Tech Stack is</h1>
+            <h1 style="font-family: 'Red Hat Display', sans-serif;" class="namehead txt-rotate" data-period="2000" data-rotate="[ &quot;ReactJS&quot;, &quot;JavaScript&quot;, &quot;NodeJs&quot;, &quot;GraphQL&quot;,&quot;MongoDB&quot;,&quot;HTML/CSS&quot;]"></h1>
+            <br>
+            <div class="buttons">
+              <a href="https://drive.google.com/file/d/1g7v4XTs02QO2eC_YLyMmRAc7L78ny4Bh/view?usp=sharing"><b>Resume</b></a>
+              <a href="#" id="myBtn"><b>Contact Me</b></a>
+          </div>
+          
+          <!-- The Modal -->
+          <div id="myModal" class="modal" style="font-family: 'Red Hat Display', sans-serif;">
+              <form>
+                <div class="row">
+                  <div class="col-sm-11"></div>
+                    <div class="closebutton">
+                      <span class="closebtn">&times;</span>
+                    </div>
+                  </div>
+                  <div style="margin-top: -10px;">
+                    <h1><b>Contact Me!</b></h1>
+                    <p>I'd love to hear from you !</p> 
+                  </div>
+
+                  <ul class="contact-list">
+                    <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Surat</span></i></li>
+                    
+                    <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:91-9601450402" title="Give me a call">(+91) 9601450402</a></span></i></li>
+                    
+                    <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">mantriyash2025@gmail.com</a></span></i></li>
+                    
+                  </ul>
+                  <div class="buttons">
+                    <a><b>Message me on &nbsp;<i class="fa fa-whatsapp"></i> </b></a><br><br><br>
+                    <a><b>Message me on &nbsp;<i class="fa fa-telegram"></i> </b></a>
+                </div>
+                                  
+              </form>
+            </div>
+        </div>
+      </div>
+
+  <!-- Skills -->
+
+  <div class='skillnaboutme' id="skillnaboutme">
+    <br>
+    <h1 class="tophead" style="font-family: Aclonica, sans-serif;">About Me&nbsp;</h1>
+  <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-10 offset-1 offset-lg-0 skills">
+          <div class="names my-3">
+            <h1>HTML/CSS</h1>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:80%">
+                80%
+              </div>
+            </div>
+          </div>
+
+          <div class="names my-3">
+            <h1>JavaScript</h1>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width:75%">
+                75%
+              </div>
+            </div>
+          </div>
+
+          <div class="names my-3">
+            <h1>ReactJs</h1>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width:70%">
+                70%
+              </div>
+            </div>
+          </div>
+
+          <div class="names my-3">
+            <h1>MongoDB/NodeJS</h1>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" style="width:70%">
+                70%
+              </div>
+            </div>
+          </div>
+
+          <div class="names my-3">
+            <h1>GraphQL</h1>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width:65%">
+                65%
+              </div>
+            </div>
+          </div>
+
+          <div class="names my-3">
+            <h1>Python</h1>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width:75%">
+                75%
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12 col-12">
+          <div class="row">
+            <br>
+            <h1 class="head" style="font-size: 26px;font-family: 'Red Hat Display', sans-serif;font-weight: bold;margin-bottom: 25px;margin-top: 15px;">Web Developer</h1>
+            <p class="pg" style="font-family: 'Red Hat Display', sans-serif;text-align: center;">Hey, I'm a Front End Web Developer and currently pursuing Btech ( Computer Engineering ) . Along with that my goal is 
+              to become a Full Stack Web Developer and currently working on it . At present I'm doing internship at Honchous as a Web Developer and working as a Campus Ambassador
+              at Coding Ninjas India . My curiosity levels are as fresh as when i was a child. I believe in eternal learning and deliberate effort as they are the only way to become the smartest in the room . I am a good timekeeper, always willing to learn new skills. Always open for hackathons and similar types of opportunities.
+            </p>
+            <div class="knowmore">
+              <button class="btn-hover color-1" onclick="document.location.href='https://www.linkedin.com/in/yashmantri20/';">KNOW MORE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+  </div>
+
+    <!-- Project Module -->
+    <div class="projects" id="projects">
+      <br/>
+          <h1><b style="color: black; font-family: 'Aclonica', sans-serif;">Recent Projects</b></h1><br/>
+          <div class="project">
+              <div class="flip-card">
+                  <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <img src="./images/git.jpeg" alt="Avatar" style="width: 100%;height: 100%;"/>
+                          </div>
+                          <div class="flip-card-back">
+                            <br>
+                            <h4>GitHub Find and Compare</h4> 
+                            <p>It is created using vanilla Javascript ( No Framework )</p> 
+                            <p>Some Features :<br><br>
+                              0. Responsive<br>
+                              1. Getting data from Github API<br>
+                              2. Autocomplete Search<br>
+                              3. Comparison between two Github Profiles<br>
+                              4. Debouncing for minimizing the API Calls</p>
+                            <button class="btn-project color-1" onclick="document.location.href='https://githubprofilecompare.netlify.app/';">KNOW MORE</button>
+                          </div>
+                    </div>
+              </div>
+
+              <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                        <img src="./images/blog.jpg" alt="Avatar" style="width: 100%;height: 100%;"/>
+                        </div>
+                        <div class="flip-card-back">
+                        <br>
+                        <h4>Quotes For All</h4> 
+                        <p>It is a Full Stack Web App created using MERNG</p> 
+                        <p>Some Features :<br><br>
+                          0. Responsive<br>
+                          1. Login and Register<br>
+                          2. Share and Delete the post which is posted<br>
+                          3. Like and Comment on any post<br>
+                          4. Follow / Unfollow feature</p>
+                        <button class="btn-project color-1" onclick="document.location.href='https://quotes-for-all.netlify.app/';">KNOW MORE</button>
+                        </div>
+                    </div>
+              </div>
+
+              <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                          <img src="./images/tracker.jpg" alt="Avatar" style="width: 100%;height: 100%;"/>
+                        </div>
+                        <div class="flip-card-back">
+                          <br>
+                          <h4>Covid-19 Tracker</h4> 
+                          <p>It is created using ReactJS</p> 
+                          <p>Some Features :<br><br>
+                            0. Information regarding Total Confirmed cases and Total Active cases<br>
+                            1. Information regarding Total Recovered and Total Deaths<br>
+                            2. Self Assessment Test<br>
+                            3.Helpful Links</p>
+                          <button class="btn-project color-1" onclick="document.location.href='https://covid19-india-app.netlify.app/';">KNOW MORE</button>
+                        </div>
+                    </div>
+              </div>
+        </div>
+      </div>
+
+
+
+      <!-- Blog -->
+
+      <div class="team-boxed" id="blog">
+        <div class="container">
+            <div class="intro">
+                <br>
+                <h1 class="text-center" style="font-family: 'Aclonica', sans-serif;color: black;">Recent Blogs</h1><br>
+            </div>
+            <div class="row people">
+                <div class="col-md-6 col-lg-4 item">
+                    <div class="box">
+                        <h3 class="name">Debouncing and Throttling in JavaScript<br></h3>
+                        <p>Debouncing and Throttling are very important terms and you should know about it.</p>
+                        <button class="btn-project color-1" onclick="document.location.href='https://www.linkedin.com/in/yashmantri20/';">Read More</button>   
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <div class="box">
+                        <h3 class="name">Best Practices on LinkedIn<br></h3>
+                        <p>0. Treat your profile as your professional brochure. Use an appropriate-looking profile image .
+                          </p>
+                        <button class="btn-project color-1" onclick="document.location.href='https://www.linkedin.com/in/yashmantri20/';">Read More</button>  
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <div class="box">
+                        <h3 class="name">Interesting Facts <br>about JavaScript <br></h3>
+                        <p>
+                          0. NaN is a number
+                          NaN (Not a number) is being a number. Also, NaN is not equal to itself.</p>
+                        <button class="btn-project color-1" onclick="document.location.href='https://www.linkedin.com/in/yashmantri20/';">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+        <!-- Site footer -->
+    <footer class="site-footer">
+ 
+      <div class="container">
+
+
+          <div>
+            <ul class="social-icons">
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="github" href="#"><i class="fa fa-github"></i></a></li>
+              <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>   
+            </ul>
+          </div>
+          <br>
+          <div>
+              <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
+                <a href="#">Yash Mantri</a>.
+              </p>
+          </div>
+      </div>
+</footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="/js/autotype.js"></script>
+    <script src="./js/scroll.js"></script>
+    <script src="./js/modal.js"></script>
+
+</body>
+</html>
